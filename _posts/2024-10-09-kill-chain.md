@@ -7,7 +7,7 @@ tags: [nmap, kali, metasploit]
 
 <!-- Se desarrolla el laboratorio utilizando Máquinas virtualizadas mediante Virtual-Box. Se cuenta con un Kali y un Metasploitable virtualizados. -->
 
-## Fases del Kill-Chain
+## **Fases del Kill-Chain**
 
 <!-- Pasos típicos del Kill Chain:
 - **Reconnaissance**: Profundizamos en el escaneo con Nmap
@@ -34,7 +34,7 @@ doi = {10.1007/978-3-319-22915-7_40}
 {: .prompt-info }
 
 
-## Reconnaissance
+## **Reconnaissance**
 Reconnaissance es la fase inicial en el proceso de ataque cibernético, donde se recopila información sobre un objetivo potencial, que puede ser un individuo o una entidad organizacional. Este proceso se divide en dos tipos:
 
 * Reconocimiento Pasivo: Se lleva a cabo sin alertar al objetivo, utilizando métodos como consultas de dominio, registros WHOIS y recopilación de datos de redes sociales y documentos públicos.
@@ -113,7 +113,7 @@ El flag --script permite ejecutar scripts de Nmap Scripting Engine (NSE) que pue
 
 
 
-## Weaponization
+## **Weaponization**
 La fase de Weaponization en la cadena de ataque cibernético se centra en diseñar un acceso no autorizado (backdoor) y un plan de penetración, utilizando la información recopilada en la fase de reconocimiento. Esta etapa implica la creación de un Remote Access Tool (RAT), que permite al atacante acceder de forma remota y oculta al sistema de la víctima.
 
 
@@ -601,7 +601,7 @@ El script *ssh_login* se utiliza para realizar ataques de fuerza bruta en servid
 
 
 
-## Delivery / Explotation
+## **Delivery / Explotation**
 La fase de Delivery en la cadena de ataque cibernético es crucial para el éxito de un ataque. Esta etapa se encarga de la transmisión del "arma" (el malware o el acceso no autorizado) al objetivo, y es fundamental contar con información del objetivo obtenida en las fases de reconocimiento.
 
 La fase de explotación ocurre inmediatamente después de que se ha entregado el arma cibernética y el usuario realiza la interacción necesaria, permitiendo que el malware se ejecute en el sistema del objetivo. El objetivo principal de esta etapa es instalar o ejecutar el payload de forma silenciosa y sin ser detectado.
@@ -616,7 +616,7 @@ La fase de explotación ocurre inmediatamente después de que se ha entregado el
 - Conexión con el Controlador: Una vez que el payload se ejecuta, establece una conexión con el servidor de Comando y Control (C&C) del atacante, informando sobre su ejecución exitosa y esperando recibir más instrucciones. -->
 
 
-## Installation
+## **Installation**
 La instalación de malware sigue a la explotación y requiere cumplir tres condiciones, **Compatibilidad**: El software o sistema operativo debe ser vulnerable. **Versiones Antiguas**: No debe estar actualizado a versiones donde el exploit no funcione. **Evasión de Seguridad**: Los antivirus no deben detectar el exploit ni el payload.
 Si se cumplen, el exploit se activa, instalando el payload que se conecta al servidor de Comando y Control para recibir instrucciones.
 Los exploits se basan en vulnerabilidades de software, identificadas como CVE. El fuzzing se utiliza para descubrir estas vulnerabilidades. El malware moderno utiliza técnicas avanzadas, como droppers y downloaders, para instalarse y actualizarse en los dispositivos de las víctimas.
@@ -916,7 +916,7 @@ Para montar y ejecutar archivos, el script crea enlaces simbólicos y ejecuta pr
 Este script como herramienta, puede ser útil tanto para la recuperación de datos, así como para propósitos de análisis forense, permitiendo acceder a versiones anteriores de archivos y carpetas, manipulando desde la línea de comandos.
 
 
-## Actions on Object
+## **Actions on Object**
 Después de establecer comunicación con el sistema objetivo, el atacante ejecuta comandos según el tipo de ataque:
 - **Ataques Masivos**: Buscan acceder a múltiples sistemas, obteniendo credenciales de bancos y redes sociales. Utilizan botnets para DDoS y minería de criptomonedas.
 - **Ataques Dirigidos**: Son más sofisticados y buscan información confidencial y credenciales. También pueden intentar propagarse por la red y causar daños al sistema.
@@ -950,7 +950,7 @@ Metasploit tiene módulos específicos, como *post/windows/gather/hashdump*, que
 Desde una sesión con privilegios administrativos, se puede usar el comando reg save para guardar las secciones relevantes del registro, que pueden incluir la información de usuarios y contraseñas en formato legible.
 
 
-## Conclusions
+## **Conclusions**
 
 ### 16. Redactar sus conclusiones en las cuáles debe abordar:
 
